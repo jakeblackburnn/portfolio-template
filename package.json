@@ -1,0 +1,18 @@
+{
+  "name": "portfolio-template",
+  "version": "1.0.0",
+  "description": "Simple and responsive portfolio website for programmers.",
+
+  "main": "server.js",
+
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "J. Blackburn",
+  "license": "ISC",
+
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+
+}
