@@ -7,7 +7,7 @@ const path    = require( 'path'    );
 
 
 
-const port  = 5000;
+const port  = 3000;
 const root  = path.join(__dirname, 'public');
 
 const app   = express();
