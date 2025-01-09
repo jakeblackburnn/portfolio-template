@@ -2,7 +2,7 @@
 
 By J. Blackburn 
 
-Last updated: Jan 8 2024 (**WIP**)
+Last updated: Jan 9 2024 (**WIP**)
 
 Simple, responsive, and customizable portfolio website template intended for up-and-coming programmers. Project uses express to serve simple HTML file locally for development.
 
@@ -27,13 +27,17 @@ Simple, responsive, and customizable portfolio website template intended for up-
 
 ## Usage
 
-1. start local server
+1. start local server using nodemon
     ```bash
     npm start
     ```
+    OR
+    ```bash
+    nodemon ./server.js
+    ```
 2. navigate to local web address (localhost:3000)
 
-3. Customize the project for your needs, find a resonable hosting provider, and serve your personalized portfolio website!
+3. Customize the project for your needs, find a reasonable hosting provider, and serve your personalized portfolio website!
 
 ---
 
