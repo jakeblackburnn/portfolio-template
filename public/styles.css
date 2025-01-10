@@ -25,8 +25,6 @@ main {
   object-fit: cover;
 }
 
-
-
 .content-right {
   height: 100vh;
   width: 55%;
@@ -40,9 +38,23 @@ main {
   width: 75%
 }
 
+.content-right h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.content-right h4 {
+  padding-left: 5%;
+  margin: 0;
+}
+
 .content-right ul {
   width: 20%;
   list-style: none;
+}
+
+.content-right li {
+  margin: 10px;
 }
 
 .content-right a {
@@ -60,12 +72,22 @@ main {
   padding: 10px;
   color: grey;
   font-size: 0.9rem;
+  font-style: italic;
 }
 
 
 
 footer {
-  padding: 30px;
-  margin: 0;
+  font-style: italic;
+  padding-top: 30px;
+  margin: 0 30% 0 30%;
   color: lightpink;
+}
+
+footer a {
+  color: rgba(255, 0, 100, 0.6);
+}
+
+footer a:hover {
+  color: blue;
 }
