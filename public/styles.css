@@ -58,7 +58,8 @@ main {
 }
 
 .content-right a {
-  color: rgba(255, 0, 100, 0.6);
+  color: rgba(150, 100, 255, 1);
+  /*color: rgba(255, 0, 100, 0.6);*/
 }
 
 .content-right a:hover {
@@ -81,11 +82,11 @@ footer {
   font-style: italic;
   padding-top: 30px;
   margin: 0 30% 0 30%;
-  color: lightpink;
+  color: lightgrey;
 }
 
 footer a {
-  color: rgba(255, 0, 100, 0.6);
+  color: rgba(150, 100, 255, 1);
 }
 
 footer a:hover {
