@@ -8,11 +8,22 @@ body {
   background: black;
 }
 
+
 main {
+  scroll-snap-type: y proximity;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.content-section {
+  scroll-snap-align: start;
+  height: 100vh;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   background: white;
+  z-index: 2;
 }
 
 .content-left {
@@ -20,8 +31,8 @@ main {
 }
 
 .content-left img {
-  width: 100%;
   height: 100vh;
+  width: 100%;
   object-fit: cover;
 }
 
@@ -84,12 +95,46 @@ main {
   font-style: italic;
 }
 
+section h6 {
+  font-size: 2rem;
+}
+
+
+.bg-section {
+  width: 100%;
+  height: 90vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+}
+
+#bg-about {
+  background-image: url('images/bg-1.jpg');
+}
+
+#bg-projects {
+  background-image: url('images/bg-2.jpg');
+}
+
+#bg-experience {
+  background-image: url('images/bg-3.jpg');
+}
+
+
+
+
+
+
 
 
 footer {
-  font-style: italic;
+  scroll-snap-align: none;
+  height: 50%;
   padding-top: 30px;
   margin: 0 30% 0 30%;
+  font-style: italic;
   color: lightgrey;
 }
 
