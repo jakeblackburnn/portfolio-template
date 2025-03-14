@@ -2,7 +2,7 @@
 
 By J. Blackburn 
 
-Last updated: Jan 10 2024 (**WIP**)
+Last updated: Mar 14 2024 (**WIP**)
 
 Simple, responsive, and customizable portfolio website template intended for up-and-coming programmers. Project uses express to serve simple HTML file locally for development.
 
@@ -43,7 +43,7 @@ Simple, responsive, and customizable portfolio website template intended for up-
 
 ## Features
 
-Nothing So Far :(
+about me, projects and experience sections, plus a footer about the website itself
 
 ---
 
