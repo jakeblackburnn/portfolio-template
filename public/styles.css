@@ -22,21 +22,34 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: white;
   z-index: 2;
 }
 
-.content-left {
+.about {
+  background-color: white;
+}
+
+.projects {
+  background-color: white;
+
+}
+.experience {
+  background-color: white;
+}
+
+
+.image-container {
+  height: 100vh;
   width: 45%;
 }
 
-.content-left img {
-  height: 100vh;
+.image-container img {
+  height: 100%;
   width: 100%;
   object-fit: cover;
 }
 
-.content-right {
+.content-container {
   height: 100vh;
   width: 55%;
   display: flex;
@@ -44,38 +57,63 @@ main {
   align-items: center;
 }
 
-.content-right header {
+.content-container .section-header {
   margin: 50px;
-  width: 75%
+  width: 75%;
+
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+  }
 }
 
-.content-right h1 {
-  text-align: center;
-  font-size: 2rem;
+.content-container .content-sub-section {
+  width: 75%;
+
 }
 
-.content-right h4 {
+  .education-details {
+    display: flex;
+    flex-direction: row;
+
+    p {
+      font-size: 0.7rem;
+      margin: 0;
+      padding: 10px; 3%;
+
+      b {
+	font-size: 0.8rem;
+      }
+    }
+  }
+
+
+.content-container h4 {
   padding-left: 5%;
   margin: 0;
 }
 
-.content-right ul {
+.content-container ul {
   text-align: center;
   padding: 0;
   width: 20%;
   list-style: none;
 }
 
-.content-right li {
+.content-container li {
   margin: 10px;
 }
 
-.content-right a {
+.content-container a {
   color: rgba(150, 100, 255, 1);
-  /*color: rgba(255, 0, 100, 0.6);*/
 }
 
-.content-right a:hover {
+.content-container a:hover {
   color: blue;
 }
 
@@ -85,7 +123,7 @@ main {
 }
 
 
-.content-right figcaption {
+.content-container figcaption {
   margin-top: auto;
   align-self: flex-start;
   width: 60%;
@@ -95,14 +133,13 @@ main {
   font-style: italic;
 }
 
-section h6 {
-  font-size: 2rem;
-}
+
+
 
 
 .bg-section {
   width: 100%;
-  height: 90vh;
+  height: 70vh;
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -111,14 +148,17 @@ section h6 {
 }
 
 #bg-about {
+  opacity: 0.5;
   background-image: url('images/bg-1.jpg');
 }
 
 #bg-projects {
+  opacity: 0.4;
   background-image: url('images/bg-2.jpg');
 }
 
 #bg-experience {
+  opacity: 0.4;
   background-image: url('images/bg-3.jpg');
 }
 
