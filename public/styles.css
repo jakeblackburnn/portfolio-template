@@ -1,5 +1,17 @@
 /* Created by J. Blackburn - Jan 8 2025 */
 
+
+
+
+/*
+ *
+ *     PORTFOLIO TEMPLATE STYLES 
+ *
+ */
+
+
+
+/* CORE DESIGN ELEMENTS */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -7,136 +19,12 @@ body {
   color: #333;
   background: black;
 }
-
-
 main {
   scroll-snap-type: y proximity;
   overflow-y: scroll;
   height: 100vh;
 }
-
-.content-section {
-  scroll-snap-align: start;
-  height: 100vh;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 2;
-}
-
-.about {
-  background-color: white;
-}
-
-.projects {
-  background-color: white;
-
-}
-.experience {
-  background-color: white;
-}
-
-
-.image-container {
-  height: 100vh;
-  width: 45%;
-}
-
-.image-container img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-
-.content-container {
-  height: 100vh;
-  width: 55%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.content-container .section-header {
-  margin: 50px;
-  width: 75%;
-
-  h1 {
-    text-align: center;
-    font-size: 2rem;
-  }
-
-  h2 {
-    text-align: center;
-    font-size: 2rem;
-  }
-}
-
-.content-container .content-sub-section {
-  width: 75%;
-
-}
-
-  .education-details {
-    display: flex;
-    flex-direction: row;
-
-    p {
-      font-size: 0.7rem;
-      margin: 0;
-      padding: 10px; 3%;
-
-      b {
-	font-size: 0.8rem;
-      }
-    }
-  }
-
-
-.content-container h4 {
-  padding-left: 5%;
-  margin: 0;
-}
-
-.content-container ul {
-  text-align: center;
-  padding: 0;
-  width: 20%;
-  list-style: none;
-}
-
-.content-container li {
-  margin: 10px;
-}
-
-.content-container a {
-  color: rgba(150, 100, 255, 1);
-}
-
-.content-container a:hover {
-  color: blue;
-}
-
-#pinned-projects {
-  margin-top: 20px;
-  padding: 0;
-}
-
-
-.content-container figcaption {
-  margin-top: auto;
-  align-self: flex-start;
-  width: 60%;
-  padding: 10px;
-  color: grey;
-  font-size: 0.9rem;
-  font-style: italic;
-}
-
-
-
-
-
+	/* Background Section */
 .bg-section {
   width: 100%;
   height: 70vh;
@@ -146,30 +34,21 @@ main {
   position: relative;
   z-index: 1;
 }
-
 #bg-about {
   opacity: 0.5;
   background-image: url('images/bg-1.jpg');
 }
-
 #bg-projects {
   opacity: 0.4;
   background-image: url('images/bg-2.jpg');
 }
-
 #bg-experience {
   opacity: 0.4;
   background-image: url('images/bg-3.jpg');
 }
 
-
-
-
-
-
-
-
-footer {
+	 /* footer styles */
+footer { 
   scroll-snap-align: none;
   height: 50%;
   padding-top: 30px;
@@ -177,11 +56,235 @@ footer {
   font-style: italic;
   color: lightgrey;
 }
-
 footer a {
   color: rgba(150, 100, 255, 1);
 }
-
 footer a:hover {
   color: blue;
+}
+
+
+/* CONTENT SECTION DESIGN */
+.content-section {
+  scroll-snap-align: start;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  background-color: white;
+}
+
+		/* shared section image styles */
+
+	.image-container {
+	  height: 100vh;
+	  width: 45%;
+	}
+	.image-container img {
+	  height: 100%;
+	  width: 100%;
+	  object-fit: cover;
+	}
+
+		/* shared section content styles */
+
+	.content-container {
+	  height: 100vh;
+	  width: 55%;
+	  display: flex;
+	  flex-direction: column;
+	  align-items: center;
+	}
+	.content-container {
+
+		.section-header {
+		  width: 75%;
+
+			  h1{
+			    text-align: center;
+			    font-size: 2rem;
+			  }
+			  h2 {
+			    text-align: center;
+			    font-size: 2.2rem;
+			  }
+		}
+
+		.content-sub-section {
+		  width: 75%;
+		}
+
+		ul {
+		  list-style: none;
+		  text-align: center;
+		  margin-top: 20px;
+		  padding: 0;
+		}
+		li {
+		  align-items: center;
+		  margin: 10px;
+
+			h4 {
+			  padding-left: 5px;
+			  margin: 0;
+			}
+		}
+
+		a {
+		  color: rgba(150, 100, 255, 1);
+		}
+		a:hover {
+		  color: blue;
+		}
+
+
+		figcaption {
+		  margin-top: auto;
+		  width: 60%;
+		  padding: 10px 25px;
+		  color: grey;
+		  font-size: 0.9rem;
+		  font-style: italic;
+		}
+		.right-caption {
+		  text-align: left;
+		  align-self: flex-start;
+		}
+		.left-caption {
+		  text-align: right;
+		  align-self: flex-end;
+		}
+
+
+	} /* end content container styles */
+
+
+
+/* CONTENT SECTION CUSTOMIZATION */
+
+.about {
+
+	.section-header {
+	  margin: 50px;
+		
+		h4 {
+		  margin-left: 30px;
+		}
+	}
+
+	ul {
+	  width: 20%;
+	  font-size: 1.1rem;
+	}
+}
+
+.projects {
+
+  .section-header {
+    font-size: 2rem;
+    margin: 40px 0 40px 0;
+  }
+
+#pinned-projects {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+#other-projects {
+  font-size: 1.1rem;
+  margin: 50px 0 20px 0;
+}
+
+  ul {
+    width: 80%;
+    margin: 0;
+  }
+  li {
+  	h4 {
+	  margin: 0;
+	}
+	p {
+	  display: inline;
+	  color: grey;
+	}
+	pre {
+	  display: inline;
+	}
+  }
+
+  .pinned {
+    font-size: 1.1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+
+	  pre {
+	    display: inline;
+	    flex-shrink: 0;
+	    min-width: 30px;
+	    margin: 0;
+	    font-weight: bold;
+	  }
+	  p {
+	    flex: 1;
+	    word-wrap: break-word;
+	    flex-shrink: 0;
+	    margin: 0;
+	    text-align: left;
+	    color: black;
+	  }
+	  .link-container {
+	    flex-shrink: 0;
+	    min-width: 180px;
+	    text-align: right;
+	  }
+
+  }
+
+}
+
+.education-and-experience {
+
+	.section-header {
+	  font-size: 2rem;
+	  margin: 40px 0 20px 0;
+	}
+
+
+
+	.content-subsection {
+	  margin-top: 20px;
+	}
+
+	.education {
+	  margin-bottom: 40px;
+
+		h4 {
+		  text-align: center;
+		  margin: 0;
+		}
+		.education-details {
+		  margin: 10px;
+		  display: grid;
+		  grid-template-columns: repeat(2, 1fr);
+
+			p {
+			  margin: 0;
+			  padding: 3px 0;
+			  font-size: 0.8rem;
+			  text-align: center;
+			}
+		}
+	} /* end education */
+
+	.experience {
+		h4 {
+		  margin-left: 30px;
+		}
+	}
+
 }
