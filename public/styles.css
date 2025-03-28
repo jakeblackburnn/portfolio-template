@@ -187,15 +187,15 @@ footer a:hover {
     margin: 40px 0 40px 0;
   }
 
-#pinned-projects {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-}
+  #pinned-projects {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
 
-#other-projects {
-  font-size: 1.1rem;
-  margin: 50px 0 20px 0;
-}
+  #other-projects {
+    font-size: 1.1rem;
+    margin: 50px 0 20px 0;
+  }
 
   ul {
     width: 80%;
@@ -211,6 +211,9 @@ footer a:hover {
 	}
 	pre {
 	  display: inline;
+	}
+	b {
+	  color: black;
 	}
   }
 
