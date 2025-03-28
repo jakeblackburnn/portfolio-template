@@ -1,5 +1,68 @@
+/* Created by J. Blackburn - Mar 27 2025 */
 
+body {
+  color: rgb(225, 225, 225);
+}
 
-main {
-  font-family: Fantasy;
+	/* Background Section */
+#bg-about {
+  opacity: 0.3;
+  background-image: url('images/bg-dark-1.jpg');
+}
+#bg-projects {
+  opacity: 0.3;
+  background-image: url('images/bg-dark-2.jpg');
+}
+#bg-experience {
+  opacity: 0.3;
+  background-image: url('images/bg-dark-3.jpg');
+}
+
+/* Section Images */
+
+#about-image {
+  content: url('images/dark-placeholder-1.jpg'); /* TODO: Replace with relevant image */
+}
+
+#projects-image {
+  content: url('images/dark-placeholder-2.jpg'); /* TODO: Replace with relevant image */
+}
+
+#experience-image {
+  content: url('images/dark-placeholder-3.jpg'); /* TODO: Replace with relevant image */
+}
+
+/* CONTENT SECTION DESIGN */
+.content-section {
+  background-color: #111;
+}
+
+.content-container {
+	a {
+	  color: rgb(255, 100, 150);
+	}
+	a:hover {
+	  color: violet;
+	}
+}
+
+figcaption {
+  color: lightgrey;
+}
+
+.projects {
+  li {
+	p {
+	  color: lightgrey;
+	}
+	b {
+	  color: white;
+	}
+  }
+
+  .pinned {
+	  p {
+	    color: white;
+	  }
+  }
 }

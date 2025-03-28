@@ -11,12 +11,25 @@
 
 
 
+/* dark / light theme toggle button */
+
+button {
+  position: absolute;
+  right: 50px;
+  width: auto;
+  top: 5%;
+  z-index: 3;
+
+  padding: 5px;
+  font-weight: bold;
+}
+
+
 /* CORE DESIGN ELEMENTS */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   margin: 0px;
-  color: #333;
   background: black;
 }
 main {
@@ -33,18 +46,6 @@ main {
   background-position: center;
   position: relative;
   z-index: 1;
-}
-#bg-about {
-  opacity: 0.5;
-  background-image: url('images/bg-1.jpg');
-}
-#bg-projects {
-  opacity: 0.4;
-  background-image: url('images/bg-2.jpg');
-}
-#bg-experience {
-  opacity: 0.4;
-  background-image: url('images/bg-3.jpg');
 }
 
 	 /* footer styles */
@@ -73,7 +74,6 @@ footer a:hover {
   justify-content: center;
   align-items: center;
   z-index: 2;
-  background-color: white;
 }
 
 		/* shared section image styles */
@@ -132,19 +132,12 @@ footer a:hover {
 			}
 		}
 
-		a {
-		  color: rgba(150, 100, 255, 1);
-		}
-		a:hover {
-		  color: blue;
-		}
 
 
 		figcaption {
 		  margin-top: auto;
 		  width: 60%;
 		  padding: 10px 25px;
-		  color: grey;
 		  font-size: 0.9rem;
 		  font-style: italic;
 		}

@@ -1,5 +1,76 @@
+/* Created by J. Blackburn - Mar 27 2025 */
 
 
-main {
-  font-family: monospace;
+body {
+  color: #333;
+}
+
+	/* Background Section */
+#bg-about {
+  opacity: 0.5;
+  background-image: url('images/bg-1.jpg');
+}
+#bg-projects {
+  opacity: 0.4;
+  background-image: url('images/bg-2.jpg');
+}
+#bg-experience {
+  opacity: 0.4;
+  background-image: url('images/bg-3.jpg');
+}
+
+/* Section Images */
+
+#about-image {
+  content: url('images/light-placeholder-1.jpg'); /* TODO: Replace with relevant image */
+}
+
+#projects-image {
+  content: url('images/light-placeholder-2.jpg'); /* TODO: Replace with relevant image */
+}
+
+#experience-image {
+  content: url('images/light-placeholder-3.jpg'); /* TODO: Replace with relevant image */
+}
+
+
+/* CONTENT SECTION DESIGN */
+.content-section {
+  background-color: white;
+}
+
+figcaption {
+  color: grey;
+}
+
+.content-container {
+	a {
+	  color: rgba(150, 100, 255, 1);
+	}
+	a:hover {
+	  color: blue;
+	}
+}
+	
+
+
+
+
+
+.projects {
+
+  li {
+	p {
+	  color: grey;
+	}
+	b {
+	  color: black;
+	}
+  }
+
+  .pinned {
+	  p {
+	    color: black;
+	  }
+  }
 }
